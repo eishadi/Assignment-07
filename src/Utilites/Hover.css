@@ -1,0 +1,34 @@
+.hover {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.hover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-right: 4px solid #003EA4;
+    border-left: 4px solid #003EA4;
+    border-radius: 30px;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.hover:hover {
+    background-color: #FFD337;
+    color: #003EA4;
+    font-size: large;
+    font-style: normal;
+    padding: 5px 20px;
+    border-radius: 30px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.hover:hover::after {
+    opacity: 1;
+    transform: scale(1.2);
+}

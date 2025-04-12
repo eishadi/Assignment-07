@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: light --default;
+}
+
+
+@font-face {
+    font-family: Sora;
+    src: url(/src/assets/fonts/Sora-Regular.ttf);
+}
+@theme {
+    --font-Sora: Sora, "sans-serif";
+}
