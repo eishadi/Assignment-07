@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 
+'react';
 import '../../Utilites/Hover.css'
+import ellipseImg from '/src/assets/Ellipse 19.png';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -20,7 +22,7 @@ const Navbar = () => {
     return (
         <div className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/70 backdrop-blur shadow-md' : 'bg-transparent'}`}>
             <div className="navbar bg-base-100 px-5 font-Sora container mx-auto">
-                
+
                 <div className="navbar-start flex-3/4">
                     <div>
                         <a className="text-2xl md:text-4xl">
@@ -74,7 +76,7 @@ const Navbar = () => {
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
-                                <img alt="User avatar" src="/src/assets/Ellipse 19.png" />
+                                <img alt="User avatar" src={ellipseImg} />
                             </div>
                         </div>
                         <ul
